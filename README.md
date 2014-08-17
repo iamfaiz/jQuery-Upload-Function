@@ -21,3 +21,7 @@ jQuery
 			}
 		});
 	});
+	
+	
+	
+>Drag and drop upload comming soon...
