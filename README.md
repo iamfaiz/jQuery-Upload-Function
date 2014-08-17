@@ -1,7 +1,7 @@
 jQuery Upload Function
 ======================
 
-A most simple jquery upload function.
+The most simple jquery upload function.
 
 Simple Example:  
 
