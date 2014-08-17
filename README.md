@@ -23,5 +23,6 @@ jQuery
 	});
 	
 	
-	
+
+>More examples comming soon...	
 >Drag and drop upload comming soon...
