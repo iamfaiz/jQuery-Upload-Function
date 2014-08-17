@@ -10,8 +10,8 @@
 
 
 
-<script src="jquery.js"></script>
-<script src="ajaxuploader.js"></script>
+<script src="../src/jquery.js"></script>
+<script src="../src/ajaxuploader.js"></script>
 <script>
 
 	$("#file").change(function() {
