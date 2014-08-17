@@ -11,7 +11,7 @@
 
 
 <script src="../src/jquery.js"></script>
-<script src="../src/ajaxuploader.js"></script>
+<script src="../src/jqueryUploadFunction.js"></script>
 <script>
 
 	$("#file").change(function() {
