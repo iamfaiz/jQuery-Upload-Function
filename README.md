@@ -3,7 +3,7 @@ jQuery Upload Function
 
 The most simple jquery upload function.
 
-1) Simple Example:  
+**1) Simple Example:** 
 
 HTML  
 ----
@@ -22,7 +22,7 @@ jQuery
 		});
 	});
 	
-2) Displaying the uploaded image immediately:  
+**2) Displaying the uploaded image immediately:**  
 This example is located in the examples/showAnImageInRealTime directory:  
 
 HTML:  
