@@ -2,12 +2,17 @@
 <html>
 <head>
 	<title>Ajax Uploader Demo - Show Image in Real Time</title>
+	<style type="text/css">
+		img {
+			max-width: 400px;
+		}
+	</style>
 </head>
 <body>
 
 
 <input type="file" name="file" id="file">
-
+<div></div>
 
 
 <script src="../../src/jquery.js"></script>
@@ -18,8 +23,16 @@
 		$(this).ajaxUpload({
 			phpFile: "serverside.php",
 			fileNameToSend: "file",
-			callback: function(abc) {
-				console.log(abc);
+			callback: function(response) {
+				if ( response == "Invalid" )
+				{
+					$("div").html("Cannot upload the file");
+				} else {
+					var imageHTML = '<img src="' + response + '">';
+					$("div").html(imageHTML);
+				}
+
+
 			}
 		});
 	});
