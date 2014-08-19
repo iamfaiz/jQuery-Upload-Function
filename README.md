@@ -8,7 +8,7 @@ The most simple jquery upload function.
 HTML  
 ----
 
-```PHP
+```HTML
 <input type="file" name="file" id="file">
 ```
 
