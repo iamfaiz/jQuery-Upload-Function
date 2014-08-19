@@ -16,7 +16,7 @@ url: The url of the server side script to handle the file upload e.g. uploads/se
 callback: The callback function to execute after successfull ajax request. e.g ```function(response){ console.log(response); }```
 
 
-(**Note:** This function also accepts a parameter that is the response retured by the successfull ajax request)   
+(**Note:** This callback function also accepts a parameter that is the response retured by the successfull ajax request)   
 
 
 
