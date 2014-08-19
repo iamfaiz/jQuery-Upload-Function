@@ -7,7 +7,10 @@ The most simple jquery upload function.
 
 HTML  
 ----
-    <input type="file" name="file" id="file">
+
+```PHP
+<input type="file" name="file" id="file">
+```
 
 jQuery
 ------
