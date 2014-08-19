@@ -21,7 +21,7 @@
 
 	$("#file").change(function() {
 		$(this).ajaxUpload({
-			phpFile: "serverside.php",
+			url: "serverside.php",
 			fileNameToSend: "file",
 			callback: function(response) {
 				if ( response == "Invalid" )

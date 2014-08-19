@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,500,600);
+
+html { font-family: "Raleway"; }
+
+.container { max-width: 100%; width: 800px; margin: 0 auto; text-align: center; }
+
+h1 { color: #f5244a; text-align: center; }
+
+button { border: 0px solid transparent; background: #f5244a; padding: 10px; font-family: "Raleway"; outline: none; color: white; border-radius: 7px; cursor: pointer; }
+
+.well { background: lightgrey; padding: 3px; width: 100%; margin-top: 10px; }
+
+.well img { margin: 5px; max-width: 200px; height: 100px; width: 200px;  border: 2px solid lightgrey; border-radius: 4px; }

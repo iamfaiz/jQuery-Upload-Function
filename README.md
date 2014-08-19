@@ -18,7 +18,7 @@ jQuery
 ```JS
 $("#file").change(function() {
 	$(this).ajaxUpload({
-		phpFile: "serverside.php",
+		url: "serverside.php",
 		fileNameToSend: "file",
 		callback: function(responseFromServerSide) {
 			console.log(responseFromServerSide);
@@ -43,7 +43,7 @@ jQuery
 ```javascript
 $("#file").change(function() {
 	$(this).ajaxUpload({
-		phpFile: "serverside.php",
+		url: "serverside.php",
 		fileNameToSend: "file",
 		callback: function(response) {
 			if ( response == "Invalid" )
