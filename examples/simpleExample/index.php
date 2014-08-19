@@ -17,9 +17,9 @@
 	$("#file").change(function() {
 		$(this).ajaxUpload({
 			url: "serverside.php",
-			fileNameToSend: "file",
-			callback: function(abc) {
-				console.log(abc);
+			fileName: "file",
+			callback: function(resonse) {
+				console.log(resonse);
 			}
 		});
 	});
