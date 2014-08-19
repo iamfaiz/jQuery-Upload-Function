@@ -15,7 +15,7 @@ HTML
 jQuery
 ------
 
-```javascript
+```JS
 $("#file").change(function() {
 	$(this).ajaxUpload({
 		phpFile: "serverside.php",
