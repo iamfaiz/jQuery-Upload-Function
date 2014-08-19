@@ -13,7 +13,10 @@ fileName: The name of the file to send to the server e.g. file, profile_picture 
 
 url: The url of the server side script to handle the file upload e.g. uploads/serverside.php etc.  
 
-callback: The callback function to execute after successfull ajax request. e.g function(response){/* ... */} (**Note:** This function also accepts a parameter that is the response retured by the successfull ajax request)   
+callback: The callback function to execute after successfull ajax request. e.g ```function(response){ console.log(response); }```
+
+
+(**Note:** This function also accepts a parameter that is the response retured by the successfull ajax request)   
 
 
 
