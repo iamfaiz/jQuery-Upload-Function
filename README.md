@@ -1,7 +1,17 @@
 jQuery Upload Function
 ======================
-
 The most simple jquery upload function.
+
+```JS
+.ajaxUpload( options )
+```
+
+Options
+-------
+
+fileName: The name of the file to send to the server e.g. file, profile_picture etc.
+url: The url of the server side script to handle the file upload e.g. uploads/serverside.php etc.
+callback: The callback function to execute after successfull ajax request. e.g function(response){/* ... */} (**Note:** This function also accepts a parameter that is the response retured by the successfull ajax request) 
 
 **1) Simple Example:** 
 
@@ -19,7 +29,7 @@ jQuery
 $("#file").change(function() {
 	$(this).ajaxUpload({
 		url: "serverside.php",
-		fileNameToSend: "file",
+		fileName: "file",
 		callback: function(responseFromServerSide) {
 			console.log(responseFromServerSide);
 		}
@@ -44,7 +54,7 @@ jQuery
 $("#file").change(function() {
 	$(this).ajaxUpload({
 		url: "serverside.php",
-		fileNameToSend: "file",
+		fileName: "file",
 		callback: function(response) {
 			if ( response == "Invalid" )
 			{
