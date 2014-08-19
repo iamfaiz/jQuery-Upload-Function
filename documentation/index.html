@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:700,500,600">
+    <style type="text/css">
+    	body { font-family: "Raleway", "Arial" !important; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="jquery-upload-function">jQuery Upload Function</h1>
+        <p>The most simple jquery upload function.</p>
+        <pre><code class="JS">.ajaxUpload( options )
+</code></pre>
+        <h2 id="options">Options</h2>
+        <p>fileName: The name of the file to send to the server e.g. file, profile_picture etc.
+            <br />
+        </p>
+        <p>url: The url of the server side script to handle the file upload e.g. uploads/serverside.php etc.
+            <br />
+        </p>
+        <p>callback: The callback function to execute after successfull ajax request. e.g <code>function(response){ console.log(response); }</code>
+        </p>
+        <p>(<strong>Note:</strong> This callback function also accepts a parameter that is the response retured by the successfull ajax request)
+            <br />
+        </p>
+        <p><strong>1) Simple Example:</strong> 
+        </p>
+        <h2 id="html">HTML</h2>
+        <pre><code class="HTML">&lt;input type=&quot;file&quot; name=&quot;file&quot; id=&quot;file&quot;&gt;
+</code></pre>
+        <h2 id="jquery">jQuery</h2>
+        <pre><code class="JS">$("#file").change(function() {
+    $(this).ajaxUpload({
+        url: "serverside.php",
+        fileName: "file",
+        callback: function(responseFromServerSide) {
+            console.log(responseFromServerSide);
+        }
+    });
+});</code></pre>
+        <p><strong>2) Displaying the uploaded image immediately:</strong>
+            <br />This example is located in the examples/showAnImageInRealTime directory:
+            <br />
+        </p>
+        <h2 id="html_1">HTML:</h2>
+        <pre><code class="HTML">&lt;input type=&quot;file&quot; name=&quot;file&quot; id=&quot;file&quot;&gt;
+&lt;div&gt;&lt;/div&gt;
+</code></pre>
+        <h2 id="jquery_1">jQuery</h2>
+        <pre><code class="javascript">$("#file").change(function() {
+    $(this).ajaxUpload({
+		url: "serverside.php",
+		fileName: "file",
+		callback: function(responseFromServerSide) {
+			console.log(responseFromServerSide);
+		}
+	});
+});</code></pre>
+        <h2 id="server-side-php">Server Side ( PHP )</h2>
+        <pre><code class="php">&lt;?php if ( $_FILES['file']['type'] === &quot;image/jpeg&quot;)
+{
+	move_uploaded_file( $_FILES[&quot;file&quot;][&quot;tmp_name&quot;], &quot;uploads/&quot; . $_FILES[&quot;file&quot;][&quot;name&quot;] );
+	echo 'uploads/' . $_FILES[&quot;file&quot;][&quot;name&quot;];
+	} else {
+	echo &quot;Invalid&quot;;
+}
+</code>
+</pre>
+</div>
+</body>
+</html>
