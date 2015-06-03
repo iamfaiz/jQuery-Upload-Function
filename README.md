@@ -91,7 +91,3 @@ if ( $_FILES['file']['type'] === "image/jpeg")
 	echo "Invalid";
 }
 ```
-
-
->More examples comming soon...	
->Drag and drop upload comming soon...
